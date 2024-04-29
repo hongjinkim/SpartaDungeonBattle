@@ -12,7 +12,7 @@ namespace SpartaDungeonBattle
     }
     // 장비 클래스
     [Serializable]
-    internal class Item
+    public class EquipItem
     {
         public string Name { get; set; }
         public string Bio { get; set; }
@@ -28,8 +28,7 @@ namespace SpartaDungeonBattle
         public bool isEquipped { get; set; }
         public bool isAlreadyBuyed { get; set; }
 
-        [JsonConstructor]
-        public Item(string name, string bio, int str,int def, int hp, ItemType type, int price)
+        public EquipItem(string name, string bio, int str,int def, int hp, ItemType type, int price)
         {
             this.Name = name;
             this.Bio = bio;        

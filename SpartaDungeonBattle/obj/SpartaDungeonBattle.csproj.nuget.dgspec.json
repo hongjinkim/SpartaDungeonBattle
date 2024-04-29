@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ghdwl\\Desktop\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj": {}
+    "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ghdwl\\Desktop\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj": {
+    "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ghdwl\\Desktop\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
+        "projectUniqueName": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
         "projectName": "SpartaDungeonBattle",
-        "projectPath": "C:\\Users\\ghdwl\\Desktop\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
+        "projectPath": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
         "packagesPath": "C:\\Users\\ghdwl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ghdwl\\Desktop\\SpartaDungeonBattle\\obj\\",
+        "outputPath": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ghdwl\\AppData\\Roaming\\NuGet\\NuGet.Config",
