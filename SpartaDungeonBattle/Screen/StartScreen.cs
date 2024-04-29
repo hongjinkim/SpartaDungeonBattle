@@ -20,6 +20,7 @@ namespace SpartaDungeonBattle
             {
                 case 1:
                     //캐릭터 생성 화면으로 이동
+                    MakeCharacterScreen.Print();
                     break;
                 case 2:
                     //불러오기 후 게임시작 화면으로 이동

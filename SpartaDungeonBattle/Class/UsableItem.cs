@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SpartaDungeonBattle.Class;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace SpartaDungeonBattle
     public interface IItem
     {
         string Name { get; }
-        void Use(Player player); // 전사에게 아이템을 사용하는 메서드
+        void Use(); // 전사에게 아이템을 사용하는 메서드
     }
 
     // 체력 포션 클래스
@@ -17,8 +18,9 @@ namespace SpartaDungeonBattle
     {
         public string Name => "체력 포션";
 
-        public void Use(Player player)
+        public void Use()
         {
+            Player player = GameManager.Instance.player;
             Console.WriteLine("체력 포션을 사용합니다. 체력이 50 증가합니다.");
             player.Health += 50;
             if (player.Health > 100) player.Health = 100;
@@ -30,8 +32,9 @@ namespace SpartaDungeonBattle
     {
         public string Name => "공격력 포션";
 
-        public void Use(Player player)
+        public void Use()
         {
+            Player player = GameManager.Instance.player;
             Console.WriteLine("공격력 포션을 사용합니다. 공격력이 10 증가합니다.");
             player.Strength += 10;
         }
