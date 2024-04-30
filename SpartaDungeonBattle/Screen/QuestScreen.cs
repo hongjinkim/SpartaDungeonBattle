@@ -49,16 +49,9 @@ namespace SpartaDungeonBattle.Screen
                 ConsoleUtility.ShowTitle("■ Quest!! ■");
                 Console.WriteLine("");
 
-                Console.WriteLine($"{quest.Name}");
-                Console.WriteLine("");
-                Console.WriteLine($"{quest.Bio}");
-                Console.WriteLine("");
-                Console.WriteLine($"{quest.Mission}");
-                Console.WriteLine("");
-                Console.WriteLine($"-보상-");
-                Console.WriteLine("");
+                quest.PrintQuestDescription();
 
-                if(quest.isCleared)
+                if(!quest.isInProgress && !quest.isAlreadyCleared)
                 {
                     Console.WriteLine("1. 수락");
                     Console.WriteLine("2. 거절");
@@ -87,9 +80,15 @@ namespace SpartaDungeonBattle.Screen
                             {
                                 GetQuest(quest, "이미 보상을 수령 하였습니다.");
                             }
+                            else if(!quest.isCleared)
+                            {
+                                GetQuest(quest, "퀘스트 조건을 달성하지 못했습니다.");
+                            }
                             else
                             {
                                 quest.GetReward();
+                                quest.isInProgress = false;
+                                quest.isAlreadyCleared = true;
                                 QuestScreen.Print();
                             }
                             break;

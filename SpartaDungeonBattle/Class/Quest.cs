@@ -1,5 +1,6 @@
 ﻿using SpartaDungeonBattle.Class;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,31 +8,34 @@ using System.Threading.Tasks;
 
 namespace SpartaDungeonBattle
 {
-    public struct QuestReward
-    {
-        public EquipItem equipItem;
-        public int gold;
-    }
+   
     [Serializable]
     public class Quest
     {
         public string Name { get; }
         public string Bio { get; }
         public string Mission { get; }
+        public int MissionCurrent { get; set; }
+        public int MissionGoal { get; }
         public bool isInProgress { get; set; }
-        public bool isCleared { get; set; }
+        public bool isCleared => MissionCurrent >= MissionGoal;
         public bool isAlreadyCleared { get; set; }
-        public QuestReward questReward { get; set; }
-        
+        public List<EquipItem> RewardEquipItems;
+        //public List<UsableItem> usableItems;
+        public int RewardGold;
 
-        public Quest(string name, string bio, string mission)
+
+        public Quest(string name, string bio, string mission, int missionGoal, List<EquipItem> rewardEquipItems, int rewardGold)
         {
             Name = name;
             Bio = bio;
             Mission = mission;
+            MissionCurrent = 0;
+            MissionGoal = missionGoal;
             isInProgress = false;
-            isCleared = false;
             isAlreadyCleared = false;
+            RewardEquipItems = rewardEquipItems;
+            RewardGold = rewardGold;
         }
 
         internal void PrintQuestName(int idx = 0)
@@ -42,23 +46,50 @@ namespace SpartaDungeonBattle
            
             Console.WriteLine($". {Name}");
         }
-        //internal void PrintQuestDescription(int idx = 0)
-        //{
-        //    Console.ForegroundColor = ConsoleColor.DarkMagenta;
-        //    Console.Write($"{idx}");
-        //    Console.ResetColor();
+        internal void PrintQuestDescription()
+        {
+            Console.WriteLine($"{Name}");
+            Console.WriteLine("");
+            Console.WriteLine($"{Bio}");
+            Console.WriteLine("");
+            Console.WriteLine($"{Mission} ({MissionCurrent} / {MissionGoal})");
+            Console.WriteLine("");
+            Console.WriteLine($"-보상-");
+            foreach (EquipItem equipItem in RewardEquipItems)
+            {
+                Console.WriteLine($"{equipItem.Name}");
+            }
+            Console.WriteLine($"{RewardGold} G");
 
-        //    Console.WriteLine($". {Name}");
-        //}
+            Console.WriteLine("");
+        }
         internal void GetReward()
         {
             Player player = GameManager.Instance.player;
             List<EquipItem> inventory = GameManager.Instance.inventory;
 
-            player.Gold += questReward.gold;
-            inventory.Add(questReward.equipItem);
-
+            foreach(EquipItem equipItem in RewardEquipItems)
+            {
+                if (equipItem != null)
+                {
+                    inventory.Add(equipItem);
+                }
+            }
+            
+            if(RewardGold > 0)
+            {
+                player.Gold += RewardGold;
+            }
             isAlreadyCleared = true;
+        }
+
+        internal void MissionComplete(bool CountAfterProgress = true, int current = 0)
+        {
+            if(isInProgress || !CountAfterProgress)
+            {
+                MissionCurrent = current;
+            }
+
         }
     }
 }

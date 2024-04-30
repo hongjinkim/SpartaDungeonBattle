@@ -34,12 +34,13 @@ namespace SpartaDungeonBattle
             Console.WriteLine("3. 상점");
             Console.WriteLine("4. 전투 시작");
             Console.WriteLine("5. 휴식하기");
-            Console.WriteLine("6. 저장하기");
+            Console.WriteLine("6. 퀘스트");
+            Console.WriteLine("7. 저장하기");
             Console.WriteLine("");
 
             // 2. 선택한 결과를 검증함
 
-            switch (ConsoleUtility.PromptMenuChoice(1, 6))
+            switch (ConsoleUtility.PromptMenuChoice(1, 7))
             {
                 case 1:
                     StatusScreen.Print();
@@ -57,6 +58,9 @@ namespace SpartaDungeonBattle
                     RestScreen.Print();
                     break;
                 case 6:
+                    QuestScreen.Print();
+                    break;
+                case 7:
                     //saveManager.SaveGame(this);
                     GameStartScreen.Print("게임이 저장되었습니다.");
                     break;

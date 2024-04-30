@@ -41,6 +41,7 @@ namespace SpartaDungeonBattle.Class
             if (ClearTimes == Level)
             {
                 Level++;
+                GameManager.Instance.quests[2].MissionComplete(false,Level);
                 Strength_Default += 0.5f;
                 Defence_Default += 1;
             }
