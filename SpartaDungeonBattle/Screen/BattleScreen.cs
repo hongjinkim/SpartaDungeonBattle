@@ -64,6 +64,7 @@ namespace SpartaDungeonBattle.Screen
                     ConsoleUtility.PrintTextHighlights("Gold ", $"{player.Gold} G -> {player.Gold += prize} G", "");
                     Console.WriteLine("");
 
+
                     player.ClearTimes++;
                     player.UpdateStatus();
                 }

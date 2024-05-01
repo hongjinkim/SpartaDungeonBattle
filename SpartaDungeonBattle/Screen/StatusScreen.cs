@@ -22,6 +22,7 @@ namespace SpartaDungeonBattle
             Console.WriteLine("캐릭터의 정보가 표기됩니다.");
 
             ConsoleUtility.PrintTextHighlights("Lv. ", player.Level.ToString("00"));
+            ConsoleUtility.PrintTextHighlights("Exp: ", player.Exp.ToString());
             Console.WriteLine("");
             Console.WriteLine($"{player.Name} ( {player.Class} )");
 

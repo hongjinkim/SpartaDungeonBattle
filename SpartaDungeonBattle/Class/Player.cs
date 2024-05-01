@@ -11,6 +11,8 @@ namespace SpartaDungeonBattle.Class
         public int ClearTimes { get; set; }
 
         public int Level { get; set; }
+        public int Exp { get; set; }
+        public int requiredExp { get; set; }
         public string Name { get; set; }
         public string Class { get; set; }
         public float Strength_Default { get; set; }
@@ -69,6 +71,43 @@ namespace SpartaDungeonBattle.Class
 
 
 
+
+        public void totalExp()
+        {
+            if (ClearTimes == Level)
+                if (requiredExp <= Exp)
+                {
+                    Level++;
+                    Exp = 0;
+                    Strength_Default += 0.5f;
+                    Defence_Default += 1;
+                }
+        }
+        public void GainExperience(int experience)
+        {
+            Exp += experience;
+
+            if (Level == 1)
+            {
+                requiredExp = 10;
+                totalExp();
+            }
+            else if (Level == 2)
+            {
+                requiredExp = 35;
+                totalExp();
+            }
+            else if (Level == 3)
+            {
+                requiredExp = 65;
+                totalExp();
+            }
+            else if (Level == 4)
+            {
+                requiredExp = 100;
+                totalExp();
+            }
+        }
 
         public void UpdateStatus()
         {
