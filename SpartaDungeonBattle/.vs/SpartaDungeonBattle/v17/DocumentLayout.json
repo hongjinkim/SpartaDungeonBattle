@@ -1,77 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\",
+  "WorkspaceRootPath": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\namescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:screen\\namescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\class\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\class\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:class\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\gamestartscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:screen\\gamestartscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\startscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:screen\\startscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\inventoryscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:screen\\inventoryscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\battlescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:screen\\battlescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\class\\quest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:class\\quest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\class\\equipitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:class\\equipitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\class\\usableitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:class\\usableitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\restscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:screen\\restscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\storescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:screen\\storescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\statusscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:screen\\statusscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\makecharacterscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\makecharacterscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:screen\\makecharacterscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\consoleutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\namescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:screen\\namescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\inventoryscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:screen\\inventoryscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\gamestartscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:screen\\gamestartscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\startscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:screen\\startscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\battlescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:screen\\battlescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\class\\quest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:class\\quest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\class\\equipitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:class\\equipitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\class\\usableitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:class\\usableitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\restscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:screen\\restscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\storescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:screen\\storescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\screen\\statusscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:screen\\statusscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\consoleutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:consoleutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\manager\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\manager\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:manager\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\class\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\class\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:class\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\esh\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\spartadungeonbattle.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|c:\\users\\ghdwl\\documents\\github\\spartadungeonbattle\\spartadungeonbattle\\spartadungeonbattle.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{389C2AF5-E7B1-4C64-8613-B48B794F3F17}|SpartaDungeonBattle.csproj|solutionrelative:spartadungeonbattle.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
@@ -91,41 +91,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "NameScreen.cs",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\NameScreen.cs",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\NameScreen.cs",
               "RelativeDocumentMoniker": "Screen\\NameScreen.cs",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\NameScreen.cs",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\NameScreen.cs",
               "RelativeToolTip": "Screen\\NameScreen.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAgwAgAAAABAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAgwA0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-01T02:23:57.942Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\Player.cs",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\Player.cs",
               "RelativeDocumentMoniker": "Class\\Player.cs",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\Player.cs",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\Player.cs",
               "RelativeToolTip": "Class\\Player.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAkwEQAAAAAAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAA0wCoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T10:40:07.916Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Manager\\GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Manager\\GameManager.cs",
               "RelativeDocumentMoniker": "Manager\\GameManager.cs",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Manager\\GameManager.cs",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Manager\\GameManager.cs",
               "RelativeToolTip": "Manager\\GameManager.cs",
               "ViewState": "AQIAAFgAAAAAAAAAAAAUwBYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -133,23 +137,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "GameStartScreen.cs",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\GameStartScreen.cs",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\GameStartScreen.cs",
               "RelativeDocumentMoniker": "Screen\\GameStartScreen.cs",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\GameStartScreen.cs",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\GameStartScreen.cs",
               "RelativeToolTip": "Screen\\GameStartScreen.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAuwDwAAAAoAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAADEAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T08:15:45.077Z"
+              "WhenOpened": "2024-04-29T08:15:45.077Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "UsableItem.cs",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\UsableItem.cs",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\UsableItem.cs",
               "RelativeDocumentMoniker": "Class\\UsableItem.cs",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\UsableItem.cs",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\UsableItem.cs",
               "RelativeToolTip": "Class\\UsableItem.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAgwA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -157,23 +162,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "InventoryScreen.cs",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\InventoryScreen.cs",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\InventoryScreen.cs",
               "RelativeDocumentMoniker": "Screen\\InventoryScreen.cs",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\InventoryScreen.cs",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\InventoryScreen.cs",
               "RelativeToolTip": "Screen\\InventoryScreen.cs",
               "ViewState": "AQIAACsAAAAAAAAAAAAQwDUAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T08:56:43.184Z"
+              "WhenOpened": "2024-04-29T08:56:43.184Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "BattleScreen.cs",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\BattleScreen.cs",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\BattleScreen.cs",
               "RelativeDocumentMoniker": "Screen\\BattleScreen.cs",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\BattleScreen.cs",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\BattleScreen.cs",
               "RelativeToolTip": "Screen\\BattleScreen.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -181,11 +187,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "EquipItem.cs",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\EquipItem.cs",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\EquipItem.cs",
               "RelativeDocumentMoniker": "Class\\EquipItem.cs",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\EquipItem.cs",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\EquipItem.cs",
               "RelativeToolTip": "Class\\EquipItem.cs",
               "ViewState": "AQIAAHEAAAAAAAAAAAAmwA4AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -193,23 +199,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "StartScreen.cs",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\StartScreen.cs",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\StartScreen.cs",
               "RelativeDocumentMoniker": "Screen\\StartScreen.cs",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\StartScreen.cs",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\StartScreen.cs",
               "RelativeToolTip": "Screen\\StartScreen.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T08:00:53.198Z"
+              "WhenOpened": "2024-04-29T08:00:53.198Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Quest.cs",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\Quest.cs",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\Quest.cs",
               "RelativeDocumentMoniker": "Class\\Quest.cs",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\Quest.cs",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\Quest.cs",
               "RelativeToolTip": "Class\\Quest.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAswDsAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -217,23 +224,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 1,
               "Title": "MakeCharacterScreen.cs",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\MakeCharacterScreen.cs",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\MakeCharacterScreen.cs",
               "RelativeDocumentMoniker": "Screen\\MakeCharacterScreen.cs",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\MakeCharacterScreen.cs",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\MakeCharacterScreen.cs",
               "RelativeToolTip": "Screen\\MakeCharacterScreen.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAQAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvyUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T10:52:26.985Z"
+              "WhenOpened": "2024-04-29T10:52:26.985Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "RestScreen.cs",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\RestScreen.cs",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\RestScreen.cs",
               "RelativeDocumentMoniker": "Screen\\RestScreen.cs",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\RestScreen.cs",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\RestScreen.cs",
               "RelativeToolTip": "Screen\\RestScreen.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAwA8AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -241,11 +249,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "StoreScreen.cs",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\StoreScreen.cs",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\StoreScreen.cs",
               "RelativeDocumentMoniker": "Screen\\StoreScreen.cs",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\StoreScreen.cs",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\StoreScreen.cs",
               "RelativeToolTip": "Screen\\StoreScreen.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAAABIAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -253,11 +261,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "StatusScreen.cs",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\StatusScreen.cs",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\StatusScreen.cs",
               "RelativeDocumentMoniker": "Screen\\StatusScreen.cs",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\StatusScreen.cs",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Screen\\StatusScreen.cs",
               "RelativeToolTip": "Screen\\StatusScreen.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAAA8AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -267,9 +275,9 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "SaveManager.cs",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Manager\\SaveManager.cs",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Manager\\SaveManager.cs",
               "RelativeDocumentMoniker": "Manager\\SaveManager.cs",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Manager\\SaveManager.cs",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Manager\\SaveManager.cs",
               "RelativeToolTip": "Manager\\SaveManager.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAAACcAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -279,9 +287,9 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "ConsoleUtility.cs",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\ConsoleUtility.cs",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\ConsoleUtility.cs",
               "RelativeDocumentMoniker": "ConsoleUtility.cs",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\ConsoleUtility.cs",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\ConsoleUtility.cs",
               "RelativeToolTip": "ConsoleUtility.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -291,9 +299,9 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "Character.cs",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\Character.cs",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\Character.cs",
               "RelativeDocumentMoniker": "Class\\Character.cs",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\Character.cs",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\Class\\Character.cs",
               "RelativeToolTip": "Class\\Character.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -303,10 +311,10 @@
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "Player.json",
-              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\Player.json",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\ghdwl\\Documents\\GitHub\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\Player.json",
-              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\Player.json",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\ghdwl\\Documents\\GitHub\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\Player.json",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\player.json",
+              "RelativeDocumentMoniker": "..\\..\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\player.json",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\player.json",
+              "RelativeToolTip": "..\\..\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\player.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAC3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-04-29T06:35:04.411Z"
@@ -315,9 +323,9 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "SpartaDungeonBattle.csproj",
-              "DocumentMoniker": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
+              "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
               "RelativeDocumentMoniker": "SpartaDungeonBattle.csproj",
-              "ToolTip": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
+              "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
               "RelativeToolTip": "SpartaDungeonBattle.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -328,9 +336,9 @@
               "DocumentIndex": 18,
               "Title": "products.json",
               "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\products.json",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\ghdwl\\Documents\\GitHub\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\products.json",
+              "RelativeDocumentMoniker": "..\\..\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\products.json",
               "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\products.json",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\ghdwl\\Documents\\GitHub\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\products.json",
+              "RelativeToolTip": "..\\..\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\products.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfBAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-04-29T06:35:04.849Z"
@@ -340,9 +348,9 @@
               "DocumentIndex": 19,
               "Title": "inventory.json",
               "DocumentMoniker": "C:\\Users\\ghdwl\\Documents\\GitHub\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\inventory.json",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\ghdwl\\Documents\\GitHub\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\inventory.json",
+              "RelativeDocumentMoniker": "..\\..\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\inventory.json",
               "ToolTip": "C:\\Users\\ghdwl\\Documents\\GitHub\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\inventory.json",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\ghdwl\\Documents\\GitHub\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\inventory.json",
+              "RelativeToolTip": "..\\..\\TIL\\\uAC1C\uC778\uACFC\uC81C\\SpartaDungeon\\bin\\Debug\\net8.0\\save\\inventory.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-04-29T06:35:04.973Z"

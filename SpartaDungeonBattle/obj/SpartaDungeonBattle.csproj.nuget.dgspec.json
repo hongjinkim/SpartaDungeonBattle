@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj": {}
+    "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj": {}
   },
   "projects": {
-    "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj": {
+    "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
+        "projectUniqueName": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
         "projectName": "SpartaDungeonBattle",
-        "projectPath": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
-        "packagesPath": "C:\\Users\\esh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\esh\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\obj\\",
+        "projectPath": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
+        "packagesPath": "C:\\Users\\ghdwl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\esh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ghdwl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

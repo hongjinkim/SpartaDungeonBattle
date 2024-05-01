@@ -39,31 +39,23 @@ namespace SpartaDungeonBattle.Class
             Gold = 1500;
         }
 
-        public void SelectClass(string clas)
+        public void SelectClass(int idx)
         {
-            switch (clas)
+            switch (idx)
             {
-                case "1":
+                case 1:
                     Class = "전사";
                     Strength_Default = 15;
                     Defence_Default = 5;
                     Health = 100;
                     break;
 
-                case "2":
+                case 2:
                     Class = "도적";
                     Strength_Default = 17;
                     Defence_Default = 3;
                     Health = 80;
                     break;
-
-                default:
-                    Console.WriteLine("존재하지 않는 직업입니다.");
-                    Console.WriteLine("직업을 다시 선택해주세요.");
-                    string newClass = Console.ReadLine();
-                    Console.Clear();
-                    SelectClass(newClass);
-                    return;
             }
 
             UpdateStatus();
