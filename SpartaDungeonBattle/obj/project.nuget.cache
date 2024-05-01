@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DZZSVzRBe19/HCNczKLcEoYoleVce3/aQmsFFFBLzcbvA9CKoztDfWtT1DDAKyMKWxTD4ULC353Myhqcqts8Rw==",
+  "dgSpecHash": "IViqheO7kaHyKBx63qlQ1AmKImy1MpM3WRWJ9sHsfLk9jLs4J0RoV8Fv0ULOsHsWVO2UMvEjtjFazlvzIyPiFw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
+  "projectFilePath": "C:\\Users\\LG\\OneDrive\\문서\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ghdwl\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\LG\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
