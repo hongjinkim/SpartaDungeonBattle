@@ -13,23 +13,30 @@ namespace SpartaDungeonBattle.Class
         public string Name { get; }
         public int Health { get; set; }
         public float Strength { get; set; }
-        public int Attack => new Random().Next(); // 공격력은 랜덤
+        public int Defence { get; set; }
+        private int AttackAdjust => (int)Math.Ceiling(Strength * 0.1);
+        public int Attack => new Random().Next((int)Strength - AttackAdjust, (int)Strength + AttackAdjust); // 공격력은 랜덤
 
         public bool IsDead => Health <= 0;
 
-        public Monster(int level, string name, int health, int strength)
+        public Monster(int level, string name, int health, int strength, int defence)
         {
             Level = level;
-            Name = name;
+            Name = $"Lv.{Level.ToString()} " + name;
             Health = health;
             Strength = strength;
+            Defence = defence;
         }
 
-        public void TakeDamage(int damage)
+        public int TakeDamage(int damage)
         {
             Health -= damage;
-            if (IsDead) Console.WriteLine($"{Name}이(가) 죽었습니다.");
-            else Console.WriteLine($"{Name}이(가) {damage}의 데미지를 받았습니다. 남은 체력: {Health}");
+            if(Health <=0)
+            {
+                GameManager.Instance.tempExp += Level;
+                Health = 0;
+            }
+            return damage;
         }
 
         internal void PrintMonsterDescription(bool withNumber = false, int idx = 0)
@@ -43,11 +50,11 @@ namespace SpartaDungeonBattle.Class
             }
             if (IsDead)
             {
-                Console.WriteLine($"Lv.{Level} {Name} Dead");
+                Console.WriteLine($"{Name} Dead");
             }
             else
             {
-                Console.WriteLine($"Lv.{Level} {Name} HP {Health}");
+                Console.WriteLine($"{Name} HP {Health}");
             }
         }
     }
@@ -55,16 +62,16 @@ namespace SpartaDungeonBattle.Class
     // 미니언 클래스
     public class Minion : Monster
     {
-        public Minion() : base(2, "미니언", 15, 5) { }
+        public Minion() : base(2, "미니언", 15, 5, 3) { }
     }
     // 공허충 클래스
     public class Voidling : Monster
     {
-        public Voidling() : base(3, "공허충", 10, 9) { }
+        public Voidling() : base(3, "공허충", 10, 9, 5) { }
     }
     // 대포미니언 클래스
     public class SiegeMinion : Monster
     {
-        public SiegeMinion() : base(5, "대포미니언", 25, 8) { }
+        public SiegeMinion() : base(5, "대포미니언", 25, 8, 4) { }
     }
 }

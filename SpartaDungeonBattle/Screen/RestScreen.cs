@@ -42,7 +42,7 @@ namespace SpartaDungeonBattle.Screen
                     if (player.Gold >= 500)
                     {
                         player.Gold -= 500;
-                        player.Health = 100;
+                        player.Health = player.HealthMax;
                         RestScreen.Print("휴식을 완료했습니다.");
                     }
                     // 돈이 모자라는 경우

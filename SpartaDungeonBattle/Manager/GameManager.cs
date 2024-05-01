@@ -19,6 +19,8 @@ namespace SpartaDungeonBattle
         public List<EquipItem> products = new List<EquipItem>();
         public List<Quest> quests = new List<Quest>();
 
+        public int tempExp = 0;
+
         public GameManager()
         {
             InitializeGame();

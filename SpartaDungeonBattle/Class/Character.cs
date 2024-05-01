@@ -14,6 +14,6 @@ namespace SpartaDungeonBattle
         float Strength { get; set; }
         int Attack { get; }
         bool IsDead { get; }
-        void TakeDamage(int damage);
+        int TakeDamage(int damage);
     }
 }

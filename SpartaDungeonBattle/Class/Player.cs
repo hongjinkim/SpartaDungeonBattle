@@ -12,20 +12,24 @@ namespace SpartaDungeonBattle.Class
 
         public int Level { get; set; }
         public int Exp { get; set; }
-        public int requiredExp { get; set; }
+        
         public string Name { get; set; }
         public string Class { get; set; }
         public float Strength_Default { get; set; }
         public float Strength { get; set; }
         public int Defence_Default { get; set; }
         public int Defence { get; set; }
+        public int HealthMax { get; set; }
         public int Health { get; set; }
         public int Gold { get; set; }
         public EquipItem EquippedWeapon { get; set; }
         public EquipItem EquippedArmor { get; set; }
 
+        public int requiredExpAdjust = 20;
+        public int requiredExp = 10;
         public bool IsDead => Health <= 0;
-        public int Attack => new Random().Next(); // 공격력은 랜덤
+        private int AttackAdjust => (int)Math.Ceiling(Strength*0.1);
+        public int Attack => new Random().Next((int)Strength - AttackAdjust, (int)Strength + AttackAdjust); // 공격력은 랜덤
 
         public Player(string name)
         {
@@ -35,7 +39,8 @@ namespace SpartaDungeonBattle.Class
             Class = "전사";
             Strength_Default = 10;
             Defence_Default = 5;
-            Health = 100;
+            HealthMax = 100;
+            Health = HealthMax;
             Gold = 1500;
         }
 
@@ -47,66 +52,57 @@ namespace SpartaDungeonBattle.Class
                     Class = "전사";
                     Strength_Default = 15;
                     Defence_Default = 5;
-                    Health = 100;
+                    HealthMax = 100;
+                    Health = HealthMax;
                     break;
 
                 case 2:
                     Class = "도적";
                     Strength_Default = 17;
                     Defence_Default = 3;
-                    Health = 80;
+                    HealthMax = 80;
+                    Health = HealthMax;
                     break;
             }
 
             UpdateStatus();
         }
 
+     
+        //public void GainExperience(int experience)
+        //{
+        //    Exp += experience;
 
-
-
-        public void totalExp()
-        {
-            if (ClearTimes == Level)
-                if (requiredExp <= Exp)
-                {
-                    Level++;
-                    Exp = 0;
-                    Strength_Default += 0.5f;
-                    Defence_Default += 1;
-                }
-        }
-        public void GainExperience(int experience)
-        {
-            Exp += experience;
-
-            if (Level == 1)
-            {
-                requiredExp = 10;
-                totalExp();
-            }
-            else if (Level == 2)
-            {
-                requiredExp = 35;
-                totalExp();
-            }
-            else if (Level == 3)
-            {
-                requiredExp = 65;
-                totalExp();
-            }
-            else if (Level == 4)
-            {
-                requiredExp = 100;
-                totalExp();
-            }
-        }
+        //    if (Level == 1)
+        //    {
+        //        requiredExp = 10;
+        //        totalExp();
+        //    }
+        //    else if (Level == 2)
+        //    {
+        //        requiredExp = 35;
+        //        totalExp();
+        //    }
+        //    else if (Level == 3)
+        //    {
+        //        requiredExp = 65;
+        //        totalExp();
+        //    }
+        //    else if (Level == 4)
+        //    {
+        //        requiredExp = 100;
+        //        totalExp();
+        //    }
+        //}
 
         public void UpdateStatus()
         {
-            if (ClearTimes == Level)
+            if (requiredExp <= Exp)
             {
                 Level++;
-                GameManager.Instance.quests[2].MissionComplete(false,Level);
+                requiredExpAdjust += 5;
+                requiredExp += requiredExpAdjust;
+                GameManager.Instance.quests[2].MissionComplete(false, Level);
                 Strength_Default += 0.5f;
                 Defence_Default += 1;
             }
@@ -127,11 +123,22 @@ namespace SpartaDungeonBattle.Class
                 Defence = Defence_Default + EquippedArmor.Def;
             }
         }
-        public void TakeDamage(int damage)
+        public int TakeDamage(int damage)
         {
-            Health -= damage;
-            if (IsDead) Console.WriteLine($"{Name}이(가) 죽었습니다.");
-            else Console.WriteLine($"{Name}이(가) {damage}의 데미지를 받았습니다. 남은 체력: {Health}");
+            int tempDamage = (int)Math.Ceiling(damage * (10f / (10f + Defence)));
+            Health -= tempDamage;
+            if (Health <= 0)
+            {
+                Health = 0;
+            }
+            return tempDamage;
+        }
+
+        internal void PrintBattleDescription()
+        {
+            Console.WriteLine("[내정보]");
+            Console.WriteLine($"Lv.{Level} {Name} ({Class})");
+            Console.WriteLine($"HP {Health} / {HealthMax}");
         }
     }
 }
