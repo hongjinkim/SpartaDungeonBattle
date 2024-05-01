@@ -36,6 +36,9 @@ namespace SpartaDungeonBattle.Class
             Health = 100;
             Gold = 1500;
         }
+
+
+
         public void UpdateStatus()
         {
             if (ClearTimes == Level)
