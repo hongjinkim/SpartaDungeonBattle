@@ -21,6 +21,8 @@ namespace SpartaDungeonBattle.Class
         public int Defence { get; set; }
         public int HealthMax { get; set; }
         public int Health { get; set; }
+        public int ManaMax { get; set; }
+        public int Mana { get; set; }
         public int Gold { get; set; }
         public EquipItem EquippedWeapon { get; set; }
         public EquipItem EquippedArmor { get; set; }
@@ -41,6 +43,8 @@ namespace SpartaDungeonBattle.Class
             Defence_Default = 5;
             HealthMax = 100;
             Health = HealthMax;
+            ManaMax = 50;
+            Mana = ManaMax;
             Gold = 1500;
         }
 
@@ -139,6 +143,7 @@ namespace SpartaDungeonBattle.Class
             Console.WriteLine("[내정보]");
             Console.WriteLine($"Lv.{Level} {Name} ({Class})");
             Console.WriteLine($"HP {Health} / {HealthMax}");
+            Console.WriteLine($"MP {Mana} / {ManaMax}");
         }
     }
 }
