@@ -25,7 +25,7 @@ namespace SpartaDungeonBattle.Screen
             Player player = GameManager.Instance.player;
             GameManager.Instance.tempExp = 0;
 
-            if(player.Health == 0)
+            if (player.Health == 0)
             {
                 Console.Clear();
                 ConsoleUtility.ShowTitle("체력이 부족합니다");
@@ -53,7 +53,7 @@ namespace SpartaDungeonBattle.Screen
                 while (0 <= spawnTimes--)
                 {
                     spawnIndex = random.Next(count - 1);
-                    switch(spawnIndex)
+                    switch (spawnIndex)
                     {
                         case 0:
                             monsterSpawned.Add(new Minion());
@@ -65,7 +65,7 @@ namespace SpartaDungeonBattle.Screen
                             monsterSpawned.Add(new SiegeMinion());
                             break;
                     }
-                    
+
                 }
             }
 
@@ -75,7 +75,7 @@ namespace SpartaDungeonBattle.Screen
 
                 ConsoleUtility.ShowTitle("Battle!!");
 
-                for(int i = 0; i < monsterSpawned.Count(); i++)
+                for (int i = 0; i < monsterSpawned.Count(); i++)
                 {
                     monsterSpawned[i].PrintMonsterDescription(true, i + 1);
                 }
@@ -104,7 +104,7 @@ namespace SpartaDungeonBattle.Screen
                         Console.Write("원하시는 번호를 입력해주세요\n>> ");
                         if (int.TryParse(Console.ReadLine(), out int choice) && choice >= min && choice <= max)
                         {
-                            if(choice != 0)
+                            if (choice != 0)
                             {
                                 if (monsterSpawned[choice - 1].IsDead)
                                 {
@@ -119,7 +119,7 @@ namespace SpartaDungeonBattle.Screen
                             {
                                 return choice;
                             }
-                            
+
                         }
                         else
                         {
@@ -180,10 +180,10 @@ namespace SpartaDungeonBattle.Screen
             }
             void EnemyPhase()
             {
-                foreach(Monster monster in monsterSpawned)
+                foreach (Monster monster in monsterSpawned)
                 {
                     PrintResult(monster, player, "공격");
-                    if(player.IsDead)
+                    if (player.IsDead)
                     {
                         BattleResult(false);
                         return;
@@ -194,7 +194,7 @@ namespace SpartaDungeonBattle.Screen
             }
             void PrintResult(ICharacter attacker, ICharacter underAttack, string attackType)
             {
-                if(!attacker.IsDead)
+                if (!attacker.IsDead)
                 {
                     int health = underAttack.Health;
                     int damage = underAttack.TakeDamage(attacker.Attack);
@@ -253,13 +253,16 @@ namespace SpartaDungeonBattle.Screen
                     Console.WriteLine($"던전에서 몬스터 {monsterSpawned.Count}마리를 잡았습니다.");
                     Console.WriteLine("");
                     Console.Write($"Lv.{startLevel} {player.Name}");
-                    if(startLevel != player.Level)
+                    if (startLevel != player.Level)
                     {
                         Console.Write($" -> Lv.{player.Level} {player.Name}");
                     }
                     Console.WriteLine("");
                     Console.WriteLine($"HP {startHealth} -> {player.Health}");
                     Console.WriteLine($"exp {startExp} -> {player.Exp}");
+
+                    Console.WriteLine("");
+                    GetReward();
                 }
                 else
                 {
@@ -277,7 +280,54 @@ namespace SpartaDungeonBattle.Screen
                         break;
                 }
             }
-        }
+            void GetReward()
+            {
+                Player player = GameManager.Instance.player;
+                List<EquipItem> inventory = GameManager.Instance.inventory;
+                List<EquipItem> potion = new List<EquipItem>();
 
+                int gold = 0;
+                int healthPotion = 0;
+                int weapon = 0;
+
+                Random random = new Random();
+                foreach (var item in monsterSpawned)
+                {
+                    int drop = random.Next(0, 100);
+                    if(drop >= 0 && drop < 50)
+                    {
+                        weapon++;
+                    }
+                    else if(drop >= 50 && drop < 90)
+                    {
+                        healthPotion++;
+                    }
+                    else
+                    {
+                         gold += 500;
+                    }
+                }
+
+                Console.WriteLine("[획득 아이템]");
+                if(gold > 0)
+                {
+                    Console.WriteLine($"{gold} Gold");
+                }
+                if(healthPotion > 0)
+                {
+                    Console.WriteLine($"포션 - {healthPotion}");
+                }
+                if(weapon > 0)
+                {
+                    Console.WriteLine($"낡은 검 - {weapon}");
+                }
+                player.Gold += gold;
+                healthPotion += potion.Count;
+                for(int i = 0; i < weapon; i++)
+                {
+                    inventory.Add(new EquipItem("낡은 검", "쉽게 볼 수 있는 낡은 검 입니다.", 2, 0, 0, ItemType.WEAPON, 600));
+                }
+        }
+        }
     }
 }

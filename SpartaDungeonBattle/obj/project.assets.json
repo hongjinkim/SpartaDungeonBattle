@@ -55,19 +55,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ghdwl\\.nuget\\packages\\": {}
+    "C:\\Users\\LG\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
+      "projectUniqueName": "C:\\Users\\LG\\OneDrive\\문서\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
       "projectName": "SpartaDungeonBattle",
-      "projectPath": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
-      "packagesPath": "C:\\Users\\ghdwl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ghdwl\\Documents\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\obj\\",
+      "projectPath": "C:\\Users\\LG\\OneDrive\\문서\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\SpartaDungeonBattle.csproj",
+      "packagesPath": "C:\\Users\\LG\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LG\\OneDrive\\문서\\GitHub\\SpartaDungeonBattle\\SpartaDungeonBattle\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ghdwl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LG\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
