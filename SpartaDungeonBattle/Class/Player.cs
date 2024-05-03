@@ -19,6 +19,8 @@ namespace SpartaDungeonBattle.Class
         public float Strength { get; set; }
         public int Defence_Default { get; set; }
         public int Defence { get; set; }
+        public int ManaMax { get; set; }
+        public int Mana { get; set; }
         public int HealthMax { get; set; }
         public int Health { get; set; }
         public int Gold { get; set; }
@@ -41,6 +43,8 @@ namespace SpartaDungeonBattle.Class
             Defence_Default = 5;
             HealthMax = 100;
             Health = HealthMax;
+            ManaMax = 100;
+            Mana = ManaMax;
             Gold = 1500;
         }
 

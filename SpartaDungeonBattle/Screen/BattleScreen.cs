@@ -70,7 +70,6 @@ namespace SpartaDungeonBattle.Screen
 
                 }
             }
-
             void Attack()
             {
                 Console.Clear();
@@ -142,22 +141,6 @@ namespace SpartaDungeonBattle.Screen
                     case 1:
                         if(CheckMana(10))
                         {
-                            if (choice != 0)
-                            {
-                                if (monsterSpawned[choice - 1].IsDead)
-                                {
-                                    Console.WriteLine("잘못된 입력입니다. 다시 시도해주세요.");
-                                }
-                                else
-                                {
-                                    return choice;
-                                }
-                            }
-                            else
-                            {
-                                return choice;
-                            }
-
                             Skill_AlphaStrike();
                         }
                         else
@@ -281,12 +264,7 @@ namespace SpartaDungeonBattle.Screen
                 }
             }
             void EnemyPhase()
-            {
-                foreach (Monster monster in monsterSpawned)
-                {
-                    PrintResult(monster, player, "공격");
-                    if (player.IsDead)
-                isEnemyPhase = true;
+            {    
                 foreach(Monster monster in monsterSpawned)
                 {
                     PrintResult(monster,monster.Attack, player, "공격");
@@ -302,7 +280,6 @@ namespace SpartaDungeonBattle.Screen
             }
             bool IsCritical()
             {
-                if (!attacker.IsDead)
                 int num = random.Next(100);
                 if(num < 15)
                 {
@@ -378,7 +355,6 @@ namespace SpartaDungeonBattle.Screen
                     }
                 }
             }
-
             void PrintResult(ICharacter attacker,int attackPower, ICharacter underAttack, string attackType)
             {
                 if(!attacker.IsDead)
@@ -458,7 +434,7 @@ namespace SpartaDungeonBattle.Screen
                         GameStartScreen.Print();
                         break;
                 }
-            }
+            } 
             int PromptMenuChoiceCheckDeath(int min, int max)
             {
                 while (true)
@@ -489,7 +465,6 @@ namespace SpartaDungeonBattle.Screen
                     }
                 }
             }
-        }
             void GetReward()
             {
                 Player player = GameManager.Instance.player;
@@ -504,40 +479,40 @@ namespace SpartaDungeonBattle.Screen
                 foreach (var item in monsterSpawned)
                 {
                     int drop = random.Next(0, 100);
-                    if(drop >= 0 && drop < 50)
+                    if (drop >= 0 && drop < 50)
                     {
                         weapon++;
                     }
-                    else if(drop >= 50 && drop < 90)
+                    else if (drop >= 50 && drop < 90)
                     {
                         healthPotion++;
                     }
                     else
                     {
-                         gold += 500;
+                        gold += 500;
                     }
                 }
 
                 Console.WriteLine("[획득 아이템]");
-                if(gold > 0)
+                if (gold > 0)
                 {
                     Console.WriteLine($"{gold} Gold");
                 }
-                if(healthPotion > 0)
+                if (healthPotion > 0)
                 {
                     Console.WriteLine($"포션 - {healthPotion}");
                 }
-                if(weapon > 0)
+                if (weapon > 0)
                 {
                     Console.WriteLine($"낡은 검 - {weapon}");
                 }
                 player.Gold += gold;
                 healthPotion += potion.Count;
-                for(int i = 0; i < weapon; i++)
+                for (int i = 0; i < weapon; i++)
                 {
                     inventory.Add(new EquipItem("낡은 검", "쉽게 볼 수 있는 낡은 검 입니다.", 2, 0, 0, ItemType.WEAPON, 600));
                 }
-        }
+            }
         }
     }
 }
