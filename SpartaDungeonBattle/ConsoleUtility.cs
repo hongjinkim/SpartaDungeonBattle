@@ -16,10 +16,11 @@
         Console.WriteLine("  |    |   \\|    |  //    |    \\\\    \\_\\  \\ |        \\/    |    \\/    |    \\\r\n");
         Console.WriteLine(" /_______  /|______/ \\____|__  / \\______  //_______  /\\_______  /\\____|__  /\r\n");
         Console.WriteLine("         \\/                  \\/         \\/         \\/         \\/         \\/");
-        Console.WriteLine("=============================================================================");
-        Console.WriteLine("                           PRESS ANYKEY TO START                             ");
-        Console.WriteLine("=============================================================================");
-        Console.ReadKey();
+        //Console.WriteLine("=============================================================================");
+        //Console.WriteLine("                           PRESS ANYKEY TO START                             ");
+        //Console.WriteLine("=============================================================================");
+        //Console.ReadKey();
+
     }
 
     public static int PromptMenuChoice(int min, int max)
