@@ -23,6 +23,8 @@ namespace SpartaDungeonBattle.Screen
             Console.Clear();
 
             Player player = GameManager.Instance.player;
+            List<EquipItem> inventory = GameManager.Instance.inventory;
+            List<IItem> potion = GameManager.Instance.potion;
             GameManager.Instance.tempExp = 0;
             Random random = new Random();
 
@@ -214,6 +216,32 @@ namespace SpartaDungeonBattle.Screen
                 }
                 PrintResult(player, (int)(player.Attack * 1.5), monsterSpawned[num], "더블 스트라이크");
             }
+            void UseItem()
+            {
+                Console.Clear();
+
+                Console.WriteLine("");
+                Console.WriteLine("[아이템 목록]");
+                for (int i = 0; i < potion.Count; i++)
+                {
+                    potion[i].PrintPotionDescription(true, i + 1); // 나가기가 0번 고정, 나머지가 1번부터 배정
+                }
+                Console.WriteLine("");
+                Console.WriteLine("0. 나가기");
+
+                int KeyInput = ConsoleUtility.PromptMenuChoice(0, potion.Count);
+
+                switch (KeyInput)
+                {
+                    case 0:
+                        PlayerPhase();
+                        break;
+                    default:
+                        potion[KeyInput - 1].Use();
+                        UseItem();
+                        break;
+                }
+            }
             void CheckClear()
             {
                 int isCleared = 0;
@@ -250,8 +278,9 @@ namespace SpartaDungeonBattle.Screen
                 Console.WriteLine("");
                 Console.WriteLine("1. 공격");
                 Console.WriteLine("2. 스킬");
+                Console.WriteLine("3. 아이템 사용");
 
-                int keyInput = ConsoleUtility.PromptMenuChoice(1, 2);
+                int keyInput = ConsoleUtility.PromptMenuChoice(1, 3);
 
                 switch (keyInput)
                 {
@@ -261,10 +290,14 @@ namespace SpartaDungeonBattle.Screen
                     case 2:
                         Skill();
                         break;
+                    case 3:
+                        UseItem();
+                        break;
                 }
             }
             void EnemyPhase()
-            {    
+            {
+                isEnemyPhase = true;
                 foreach(Monster monster in monsterSpawned)
                 {
                     PrintResult(monster,monster.Attack, player, "공격");
@@ -292,7 +325,7 @@ namespace SpartaDungeonBattle.Screen
             }
             bool IsMiss(string attackType)
             {
-                if(attackType == "공격")
+                if(attackType != "공격")
                 {
                     return false;
                 }
@@ -412,7 +445,7 @@ namespace SpartaDungeonBattle.Screen
                     }
                     Console.WriteLine("");
                     Console.WriteLine($"HP {startHealth} -> {player.Health}");
-                    Console.WriteLine($"HP {startMana} -> {player.Mana}");
+                    Console.WriteLine($"MP {startMana} -> {player.Mana}");
                     Console.WriteLine($"exp {startExp} -> {player.Exp}");
 
                     Console.WriteLine("");
@@ -424,7 +457,7 @@ namespace SpartaDungeonBattle.Screen
                     Console.WriteLine("");
                     Console.WriteLine($"Lv.{startLevel} {player.Name}");
                     Console.WriteLine($"HP {startHealth} -> {player.Health}");
-                    Console.WriteLine($"HP {startMana} -> {player.Mana}");
+                    Console.WriteLine($"MP {startMana} -> {player.Mana}");
                 }
                 Console.WriteLine("");
                 Console.WriteLine("0. 다음");
@@ -466,17 +499,13 @@ namespace SpartaDungeonBattle.Screen
                 }
             }
             void GetReward()
-            {
-                Player player = GameManager.Instance.player;
-                List<EquipItem> inventory = GameManager.Instance.inventory;
-                List<EquipItem> potion = new List<EquipItem>();
-
+            {      
                 int gold = 0;
                 int healthPotion = 0;
                 int weapon = 0;
 
                 Random random = new Random();
-                foreach (var item in monsterSpawned)
+                for(int i = 0; i < monsterSpawned.Count; i++)
                 {
                     int drop = random.Next(0, 100);
                     if (drop >= 0 && drop < 50)
@@ -507,7 +536,7 @@ namespace SpartaDungeonBattle.Screen
                     Console.WriteLine($"낡은 검 - {weapon}");
                 }
                 player.Gold += gold;
-                healthPotion += potion.Count;
+                potion[0].Quantity = potion[0].Quantity + healthPotion;
                 for (int i = 0; i < weapon; i++)
                 {
                     inventory.Add(new EquipItem("낡은 검", "쉽게 볼 수 있는 낡은 검 입니다.", 2, 0, 0, ItemType.WEAPON, 600));

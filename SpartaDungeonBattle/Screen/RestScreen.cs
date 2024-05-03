@@ -36,7 +36,7 @@ namespace SpartaDungeonBattle.Screen
             switch (ConsoleUtility.PromptMenuChoice(0, 1))
             {
                 case 0:
-                    //GameStartScreen();
+                    GameStartScreen.Print();
                     break;
                 case 1:
                     if (player.Gold >= 500)

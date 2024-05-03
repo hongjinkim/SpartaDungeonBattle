@@ -10,14 +10,15 @@ using System.Reflection.Emit;
 
 namespace SpartaDungeonBattle
 {
+    [Serializable]
     public class GameManager
     {
         public static GameManager Instance;
-        public SaveManager saveManager = new SaveManager(); 
+     
         public Player player = new Player("");
         public List<EquipItem> inventory = new List<EquipItem>();
         public List<EquipItem> products = new List<EquipItem>();
-        public List<EquipItem> potion = new List<EquipItem>();
+        public List<IItem> potion = new List<IItem>();
         public List<Quest> quests = new List<Quest>();
 
         public int tempExp = 0;
@@ -39,6 +40,10 @@ namespace SpartaDungeonBattle
                 new EquipItem("낡은 검", "쉽게 볼 수 있는 낡은 검 입니다.", 2,0,0, ItemType.WEAPON, 600),
                 new EquipItem("청동 도끼", "어디선가 사용됐던거 같은 도끼입니다", 5,0,0, ItemType.WEAPON, 1500),
                 new EquipItem("스파르타의 창", "스파르타의 전사들이 사용했다는 전설의 창입니다.", 7,0,0, ItemType.WEAPON, 300)
+            };
+            potion = new List<IItem>
+            {
+                new HealthPotion()
             };
             quests = new List<Quest>{
                 new Quest("마을을 위협하는 미니언 처리",

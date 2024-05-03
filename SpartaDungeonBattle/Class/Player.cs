@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SpartaDungeonBattle.Class
 {
+    [Serializable]
     public class Player : ICharacter
     {
         public int ClearTimes { get; set; }
@@ -43,7 +44,7 @@ namespace SpartaDungeonBattle.Class
             Defence_Default = 5;
             HealthMax = 100;
             Health = HealthMax;
-            ManaMax = 100;
+            ManaMax = 50;
             Mana = ManaMax;
             Gold = 1500;
         }
@@ -143,6 +144,7 @@ namespace SpartaDungeonBattle.Class
             Console.WriteLine("[내정보]");
             Console.WriteLine($"Lv.{Level} {Name} ({Class})");
             Console.WriteLine($"HP {Health} / {HealthMax}");
+            Console.WriteLine($"MP {Mana} / {ManaMax}");
         }
     }
 }

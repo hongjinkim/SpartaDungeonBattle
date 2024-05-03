@@ -61,7 +61,7 @@ namespace SpartaDungeonBattle
                     QuestScreen.Print();
                     break;
                 case 7:
-                    //saveManager.SaveGame(this);
+                    SaveManager.SaveGame(GameManager.Instance);
                     GameStartScreen.Print("게임이 저장되었습니다.");
                     break;
             }
