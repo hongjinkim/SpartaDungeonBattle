@@ -24,6 +24,7 @@ namespace SpartaDungeonBattle.Screen
 
             Player player = GameManager.Instance.player;
             GameManager.Instance.tempExp = 0;
+            Random random = new Random();
 
             if (player.Health == 0)
             {
@@ -33,9 +34,11 @@ namespace SpartaDungeonBattle.Screen
                 GameStartScreen.Print();
                 return;
             }
-            bool isPlayerPhase = true;
+            bool isPlayerPhaseEnd = false;
+            bool isEnemyPhase = false;
             int startHealth = player.Health;
             int startExp = player.Exp;
+            int startMana = player.Mana;
             int startLevel = player.Level;
 
             List<Monster> monsterSpawned = new List<Monster>();
@@ -46,7 +49,6 @@ namespace SpartaDungeonBattle.Screen
 
             void SpawnMonsters()
             {
-                Random random = new Random();
                 int spawnTimes = random.Next(4);
                 int spawnIndex;
                 int count = System.Enum.GetValues(typeof(Monsters)).Length;
@@ -93,16 +95,52 @@ namespace SpartaDungeonBattle.Screen
                         PlayerPhase();
                         break;
                     default:
-                        PrintResult(player, monsterSpawned[keyInput - 1], "공격");
+                        isPlayerPhaseEnd = true;
+                        PrintResult(player,player.Attack, monsterSpawned[keyInput - 1], "공격");
                         break;
                 }
-
-                int PromptMenuChoiceCheckDeath(int min, int max)
+            }
+            bool CheckMana(int cost)
+            { 
+                if (player.Mana < cost)
                 {
-                    while (true)
-                    {
-                        Console.Write("원하시는 번호를 입력해주세요\n>> ");
-                        if (int.TryParse(Console.ReadLine(), out int choice) && choice >= min && choice <= max)
+                    Console.Clear();
+                    ConsoleUtility.ShowTitle("마나가 부족합니다");
+                    Thread.Sleep(1000);
+                    GameStartScreen.Print();
+                    return false;
+                }
+                return true;
+            }
+            void Skill()
+            {
+                Console.Clear();
+
+                ConsoleUtility.ShowTitle("Battle!!");
+
+                for (int i = 0; i < monsterSpawned.Count(); i++)
+                {
+                    monsterSpawned[i].PrintMonsterDescription();
+                }
+
+                Console.WriteLine("");
+                player.PrintBattleDescription();
+                Console.WriteLine("");
+                Console.WriteLine("1. 알파 스트라이크 - MP 10");
+                Console.WriteLine("공격력 * 2 로 하나의 적을 공격합니다.");
+                Console.WriteLine("2. 더블 스트라이크 - MP 15");
+                Console.WriteLine("공격력 * 1.5 로 2명의 적을 랜덤으로 공격합니다.");
+                Console.WriteLine("0. 취소");
+
+                int keyInput = ConsoleUtility.PromptMenuChoice(0, 2);
+
+                switch (keyInput)
+                {
+                    case 0:
+                        PlayerPhase();
+                        break;
+                    case 1:
+                        if(CheckMana(10))
                         {
                             if (choice != 0)
                             {
@@ -120,14 +158,78 @@ namespace SpartaDungeonBattle.Screen
                                 return choice;
                             }
 
+                            Skill_AlphaStrike();
                         }
                         else
                         {
-                            Console.WriteLine("잘못된 입력입니다. 다시 시도해주세요.");
+                            Skill();
                         }
-                    }
+                        break;
+                    case 2:
+                        if (CheckMana(15))
+                        {
+                            Skill_DoubleStrike();
+                        }
+                        else
+                        {
+                            Skill();
+                        }
+                        break;
+                }
+            }
+            void Skill_AlphaStrike()
+            {
+                Console.Clear();
+
+                ConsoleUtility.ShowTitle("Battle!!");
+
+                for (int i = 0; i < monsterSpawned.Count(); i++)
+                {
+                    monsterSpawned[i].PrintMonsterDescription(true, i + 1);
                 }
 
+                Console.WriteLine("");
+                player.PrintBattleDescription();
+                Console.WriteLine("");
+                Console.WriteLine("0. 취소");
+
+                int keyInput = PromptMenuChoiceCheckDeath(0, monsterSpawned.Count());
+
+                switch (keyInput)
+                {
+                    case 0:
+                        Skill();
+                        break;
+                    default:
+                        player.Mana -= 10;
+                        isPlayerPhaseEnd = true;
+                        PrintResult(player, player.Attack*2, monsterSpawned[keyInput - 1], "알파 스트라이크");
+                        break;
+                }
+            }
+            void Skill_DoubleStrike()
+            {
+                player.Mana -= 15;
+                int num;
+                while (true)
+                {
+                    num = random.Next(0, monsterSpawned.Count());
+                    if (!monsterSpawned[num].IsDead)
+                    {
+                        break;
+                    }
+                }
+                PrintResult(player, (int)(player.Attack * 1.5), monsterSpawned[num], "더블 스트라이크");
+                isPlayerPhaseEnd = true;
+                while (true)
+                {
+                    num = random.Next(0, monsterSpawned.Count());
+                    if (!monsterSpawned[num].IsDead)
+                    {
+                        break;
+                    }
+                }
+                PrintResult(player, (int)(player.Attack * 1.5), monsterSpawned[num], "더블 스트라이크");
             }
             void CheckClear()
             {
@@ -174,7 +276,7 @@ namespace SpartaDungeonBattle.Screen
                         Attack();
                         break;
                     case 2:
-                        //Skill();
+                        Skill();
                         break;
                 }
             }
@@ -184,27 +286,86 @@ namespace SpartaDungeonBattle.Screen
                 {
                     PrintResult(monster, player, "공격");
                     if (player.IsDead)
+                isEnemyPhase = true;
+                foreach(Monster monster in monsterSpawned)
+                {
+                    PrintResult(monster,monster.Attack, player, "공격");
+                    if(player.IsDead)
                     {
                         BattleResult(false);
                         return;
                     }
                 }
-                isPlayerPhase = true;
+                isEnemyPhase = false;
+                isPlayerPhaseEnd = false;
                 PlayerPhase();
             }
-            void PrintResult(ICharacter attacker, ICharacter underAttack, string attackType)
+            bool IsCritical()
             {
                 if (!attacker.IsDead)
+                int num = random.Next(100);
+                if(num < 15)
                 {
-                    int health = underAttack.Health;
-                    int damage = underAttack.TakeDamage(attacker.Attack);
-                    Console.Clear();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            bool IsMiss(string attackType)
+            {
+                if(attackType == "공격")
+                {
+                    return false;
+                }
+                int num = random.Next(100);
+                if (num < 10)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            void AttackOrSkill(ICharacter attacker, int attackPower, ICharacter underAttack, string attackType)
+            {
+                Console.Clear();
 
-                    ConsoleUtility.ShowTitle("Battle!!");
-                    Console.WriteLine("");
+                ConsoleUtility.ShowTitle("Battle!!");
+                Console.WriteLine("");
+
+                int health = underAttack.Health;
+                int damage;
+                bool isMiss = IsMiss(attackType);
+                if (isMiss)
+                {
+                    Console.WriteLine($"{attacker.Name} 의 {attackType}!");
+                    Console.Write($"{underAttack.Name} 을(를) 공격했지만 아무일도 일어나지 않았습니다.");
+                }
+                else
+                {
+                    bool isCritical = IsCritical();
+                    if (isCritical)
+                    {
+                        damage = underAttack.TakeDamage((int)(attackPower * 1.6f));
+                    }
+                    else
+                    {
+                        damage = underAttack.TakeDamage(attackPower);
+                    }
 
                     Console.WriteLine($"{attacker.Name} 의 {attackType}!");
-                    Console.WriteLine($"{underAttack.Name} 을(를) 맞췄습니다. [데미지 : {damage}]");
+                    Console.Write($"{underAttack.Name} 을(를) 맞췄습니다. [데미지 : {damage}]");
+                    if (isCritical)
+                    {
+                        Console.WriteLine(" - 치명타 공격!!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("");
+                    }
                     Console.WriteLine("");
                     Console.WriteLine($"{underAttack.Name}");
                     if (underAttack.IsDead)
@@ -215,16 +376,25 @@ namespace SpartaDungeonBattle.Screen
                     {
                         Console.WriteLine($"HP {health} -> {underAttack.Health}");
                     }
+                }
+            }
+
+            void PrintResult(ICharacter attacker,int attackPower, ICharacter underAttack, string attackType)
+            {
+                if(!attacker.IsDead)
+                {
+                    AttackOrSkill(attacker, attackPower, underAttack, attackType);
+    
                     Console.WriteLine("");
                     Console.WriteLine("0. 다음");
                     switch (ConsoleUtility.PromptMenuChoice(0, 0))
                     {
                         case 0:
                             CheckClear();
-                            if (isPlayerPhase)
+                            if (isPlayerPhaseEnd)
                             {
-                                isPlayerPhase = !isPlayerPhase;
-                                EnemyPhase();
+                                if(!isEnemyPhase)
+                                    EnemyPhase();
                             }
                             break;
                     }
@@ -232,10 +402,10 @@ namespace SpartaDungeonBattle.Screen
                 else
                 {
                     CheckClear();
-                    if (isPlayerPhase)
+                    if (isPlayerPhaseEnd)
                     {
-                        isPlayerPhase = !isPlayerPhase;
-                        EnemyPhase();
+                        if (!isEnemyPhase)
+                            EnemyPhase();
                     }
                 }
             }
@@ -245,6 +415,13 @@ namespace SpartaDungeonBattle.Screen
 
                 ConsoleUtility.ShowTitle("Battle!!");
                 Console.WriteLine("");
+
+                player.Mana += 10;
+                if(player.Mana > player.ManaMax)
+                {
+                    player.Mana = player.ManaMax;
+                }
+
                 if (isCleared)
                 {
                     player.Exp += GameManager.Instance.tempExp;
@@ -259,6 +436,7 @@ namespace SpartaDungeonBattle.Screen
                     }
                     Console.WriteLine("");
                     Console.WriteLine($"HP {startHealth} -> {player.Health}");
+                    Console.WriteLine($"HP {startMana} -> {player.Mana}");
                     Console.WriteLine($"exp {startExp} -> {player.Exp}");
 
                     Console.WriteLine("");
@@ -270,6 +448,7 @@ namespace SpartaDungeonBattle.Screen
                     Console.WriteLine("");
                     Console.WriteLine($"Lv.{startLevel} {player.Name}");
                     Console.WriteLine($"HP {startHealth} -> {player.Health}");
+                    Console.WriteLine($"HP {startMana} -> {player.Mana}");
                 }
                 Console.WriteLine("");
                 Console.WriteLine("0. 다음");
@@ -280,6 +459,37 @@ namespace SpartaDungeonBattle.Screen
                         break;
                 }
             }
+            int PromptMenuChoiceCheckDeath(int min, int max)
+            {
+                while (true)
+                {
+                    Console.Write("원하시는 번호를 입력해주세요\n>> ");
+                    if (int.TryParse(Console.ReadLine(), out int choice) && choice >= min && choice <= max)
+                    {
+                        if (choice != 0)
+                        {
+                            if (monsterSpawned[choice - 1].IsDead)
+                            {
+                                Console.WriteLine("잘못된 입력입니다. 다시 시도해주세요.");
+                            }
+                            else
+                            {
+                                return choice;
+                            }
+                        }
+                        else
+                        {
+                            return choice;
+                        }
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("잘못된 입력입니다. 다시 시도해주세요.");
+                    }
+                }
+            }
+        }
             void GetReward()
             {
                 Player player = GameManager.Instance.player;
