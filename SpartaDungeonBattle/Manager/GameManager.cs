@@ -19,6 +19,7 @@ namespace SpartaDungeonBattle
         public List<EquipItem> inventory = new List<EquipItem>();
         public List<EquipItem> products = new List<EquipItem>();
         public List<IItem> potion = new List<IItem>();
+        public List<int> potionQuantity = new List<int>();
         public List<Quest> quests = new List<Quest>();
 
         public int tempExp = 0;

@@ -21,10 +21,17 @@ namespace SpartaDungeonBattle
             //세이브 파일 저장 경로
             string path = Directory.GetCurrentDirectory() + "/save/";
 
+            gm.potionQuantity = new List<int>();
+            foreach(IItem item in gm.potion)
+            {
+                gm.potionQuantity.Add(item.Quantity); 
+            }
+
+
             string playerJson = JsonSerializer.Serialize(gm.player);
             string inventoryJson = JsonSerializer.Serialize(gm.inventory);
             string productsJson = JsonSerializer.Serialize(gm.products);
-            string potionJson = JsonSerializer.Serialize(gm.potion);
+            string potionJson = JsonSerializer.Serialize(gm.potionQuantity);
             string questJson = JsonSerializer.Serialize(gm.quests);
 
 
@@ -50,8 +57,15 @@ namespace SpartaDungeonBattle
             gm.player = JsonSerializer.Deserialize<Player>(playerJson);
             gm.inventory = JsonSerializer.Deserialize<List<EquipItem>>(inventoryJson);
             gm.products = JsonSerializer.Deserialize<List<EquipItem>>(productsJson);
-            gm.potion = JsonSerializer.Deserialize<List<IItem>>(potionJson);
             gm.quests = JsonSerializer.Deserialize<List<Quest>>(questJson);
+
+
+            gm.potionQuantity = JsonSerializer.Deserialize<List<int>>(potionJson);
+
+            for(int i = 0; i < gm.potion.Count; i++)
+            {
+                gm.potion[i].Quantity = gm.potionQuantity[i];
+            }
         }
     }
 }

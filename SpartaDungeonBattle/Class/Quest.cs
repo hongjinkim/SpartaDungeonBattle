@@ -4,27 +4,29 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace SpartaDungeonBattle
 {
    
     [Serializable]
+    
     public class Quest
     {
-        public string Name { get; }
-        public string Bio { get; }
-        public string Mission { get; }
+        public string Name { get; set; }
+        public string Bio { get; set; }
+        public string Mission { get; set; }
         public int MissionCurrent { get; set; }
-        public int MissionGoal { get; }
+        public int MissionGoal { get; set; }
         public bool isInProgress { get; set; }
-        public bool isCleared => MissionCurrent >= MissionGoal;
+        public bool isCleared { get; set; }
         public bool isAlreadyCleared { get; set; }
-        public List<EquipItem> RewardEquipItems;
+        public List<EquipItem> RewardEquipItems { get; set; }
         //public List<UsableItem> usableItems;
-        public int RewardGold;
+        public int RewardGold { get; set; }
 
-
+        [JsonConstructor]
         public Quest(string name, string bio, string mission, int missionGoal, List<EquipItem> rewardEquipItems, int rewardGold)
         {
             Name = name;
@@ -88,6 +90,10 @@ namespace SpartaDungeonBattle
             if(isInProgress || !CountAfterProgress)
             {
                 MissionCurrent++;
+                if(MissionCurrent >= MissionGoal)
+                {
+                    isCleared = true;
+                }
                 if(MissionCurrent > MissionGoal)
                 {
                     MissionCurrent = MissionGoal;

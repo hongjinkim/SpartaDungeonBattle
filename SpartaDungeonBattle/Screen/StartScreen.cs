@@ -24,7 +24,7 @@ namespace SpartaDungeonBattle
                     break;
                 case 2:
                     //불러오기 후 게임시작 화면으로 이동
-                    //Instance.saveManager.LoadGame(this);
+                    SaveManager.LoadGame(GameManager.Instance);
                     GameStartScreen.Print();
                     break;
             }

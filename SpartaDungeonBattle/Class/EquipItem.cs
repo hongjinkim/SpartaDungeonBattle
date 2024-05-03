@@ -27,7 +27,7 @@ namespace SpartaDungeonBattle
 
         public bool isEquipped { get; set; }
         public bool isAlreadyBuyed { get; set; }
-
+        [JsonConstructor]
         public EquipItem(string name, string bio, int str,int def, int hp, ItemType type, int price)
         {
             this.Name = name;
