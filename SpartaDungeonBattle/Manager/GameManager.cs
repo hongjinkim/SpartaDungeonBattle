@@ -64,7 +64,7 @@ namespace SpartaDungeonBattle
                 Instance = this;
             }
             player.UpdateStatus();
-            quests[2].MissionComplete(false, player.Level);
+            quests[2].MissionComplete(false);
             Console.Clear();
             ConsoleUtility.PrintGameHeader();
             StartScreen.Print();
@@ -90,7 +90,7 @@ namespace SpartaDungeonBattle
             else                        // 해제중이라면 장착
             {
                 // 2번 퀘스트 성공 조건
-                quests[1].MissionComplete(true, 1);
+                quests[1].MissionComplete(true);
                 if (type == ItemType.WEAPON)
                 {
                     player.EquippedWeapon = inventory[idx];

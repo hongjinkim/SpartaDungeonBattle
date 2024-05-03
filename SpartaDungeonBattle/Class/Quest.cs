@@ -83,11 +83,15 @@ namespace SpartaDungeonBattle
             isAlreadyCleared = true;
         }
 
-        internal void MissionComplete(bool CountAfterProgress = true, int current = 0)
+        internal void MissionComplete(bool CountAfterProgress)
         {
             if(isInProgress || !CountAfterProgress)
             {
-                MissionCurrent = current;
+                MissionCurrent++;
+                if(MissionCurrent > MissionGoal)
+                {
+                    MissionCurrent = MissionGoal;
+                }
             }
 
         }

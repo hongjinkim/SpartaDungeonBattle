@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -28,7 +29,7 @@ namespace SpartaDungeonBattle.Class
             Defence = defence;
         }
 
-        public int TakeDamage(int damage)
+        public virtual int TakeDamage(int damage)
         {
             Health -= damage;
             if(Health <=0)
@@ -62,7 +63,8 @@ namespace SpartaDungeonBattle.Class
     // 미니언 클래스
     public class Minion : Monster
     {
-        public Minion() : base(2, "미니언", 15, 5, 3) { }
+        public Minion() : base(2, "미니언", 15, 5, 3){ }
+            
     }
     // 공허충 클래스
     public class Voidling : Monster

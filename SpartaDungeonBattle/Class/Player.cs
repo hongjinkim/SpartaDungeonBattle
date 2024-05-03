@@ -107,7 +107,7 @@ namespace SpartaDungeonBattle.Class
                 Level++;
                 requiredExpAdjust += 5;
                 requiredExp += requiredExpAdjust;
-                GameManager.Instance.quests[2].MissionComplete(false, Level);
+                GameManager.Instance.quests[2].MissionComplete(false);
                 Strength_Default += 0.5f;
                 Defence_Default += 1;
             }

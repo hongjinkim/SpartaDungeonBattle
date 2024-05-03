@@ -56,7 +56,7 @@ namespace SpartaDungeonBattle.Screen
                 int count = System.Enum.GetValues(typeof(Monsters)).Length;
                 while (0 <= spawnTimes--)
                 {
-                    spawnIndex = random.Next(count - 1);
+                    spawnIndex = random.Next(count);
                     switch (spawnIndex)
                     {
                         case 0:
@@ -108,7 +108,6 @@ namespace SpartaDungeonBattle.Screen
                     Console.Clear();
                     ConsoleUtility.ShowTitle("마나가 부족합니다");
                     Thread.Sleep(1000);
-                    GameStartScreen.Print();
                     return false;
                 }
                 return true;
@@ -381,6 +380,10 @@ namespace SpartaDungeonBattle.Screen
                     if (underAttack.IsDead)
                     {
                         Console.WriteLine($"HP {health} -> Dead");
+                        if(underAttack.GetType() == typeof(Minion))
+                        {
+                            GameManager.Instance.quests[0].MissionComplete(true);
+                        }
                     }
                     else
                     {
